@@ -86,14 +86,14 @@
     NSString *URLTYPE = [[NSString alloc] init];
     NSString *str = [[NSString alloc] init];
     NSDictionary *dicType = [[NSDictionary alloc] init];
-//    [GBNetWorking PostRequestType:str Url:URLTYPE dicData:dicType successPBlock:^(NSDictionary * _Nullable dictionary, NSString * _Nonnull type)
-//    {
-//        GBLog(@"%@ %@", type, dictionary);
-//        
-//    } errorBlock:^(NSError * _Nullable error)
-//    {
-//        GBLog(@"%@", error);
-//    }];
+    [GBNetWorking PostRequestType:str Url:URLTYPE dicData:dicType successPBlock:^(NSDictionary * _Nullable dictionary, NSString * _Nonnull type)
+    {
+        GBLog(@"%@ %@", type, dictionary);
+        
+    } errorBlock:^(NSError * _Nullable error)
+    {
+        GBLog(@"%@", error);
+    }];
     
     #pragma mark -- DOWNLOAD
     /**
