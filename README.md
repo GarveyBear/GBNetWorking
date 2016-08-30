@@ -52,7 +52,9 @@ paramDic successPBlock:(GB_Param_SucceedBlock)successPBlock errorBlock:(GB_Error
 
 ###Download请求
 ```ObjectiveC 
-- (NSURLSessionDownloadTask *)downLoadWithURL:(NSString *)URLString progress:(GB_Progress)progress destination:(GB_Destination)destination downLoadSuccess:(GB_DownLoadSuccess)downLoadSuccess errorBlock:(GB_ErrorBlock)errorBlock
+- (NSURLSessionDownloadTask *)downLoadWithURL:(NSString *)URLString progress:(GB_Progress)progress
+destination:(GB_Destination)destination 
+downLoadSuccess:(GB_DownLoadSuccess)downLoadSuccess errorBlock:(GB_ErrorBlock)errorBlock
 {
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
     
