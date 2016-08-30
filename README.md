@@ -18,5 +18,14 @@
 ```
 ###
 
+###Get请求 区分接口类型
+```ObjectiveC 
+         + (id)GetRequestType:(NSString *)type Url:(NSString *)requestUrl successBlock:(GB_Param_SucceedBlock)successPBlock errorBlock:(GB_ErrorBlock)errorBlock
+        {
+        return [[self alloc] initWithGetTypeRequest:type Url:requestUrl successBlock:successPBlock errorBlock:errorBlock];
+        }
+```
+###
+
 [我的博客](http://blog.csdn.net/normanv "CSDN博客")
 [回到顶部](#readme)
