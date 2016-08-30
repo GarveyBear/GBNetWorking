@@ -9,7 +9,7 @@
 * Download接口 
 
 ###Get请求 不区分接口类型
-```Java
+```ObjectiveC 
       + (id)GetRequest:(NSString *)requestUrl successBlock:(GB_SucceedBlock)successBlock errorBlock:(GB_ErrorBlock)errorBlock
       {
       return [[self alloc] initWithGetRequest:requestUrl successBlock:successBlock errorBlock:errorBlock];
