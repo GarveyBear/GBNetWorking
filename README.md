@@ -9,7 +9,7 @@
 * 区分接口   Post请求
 * Download请求
 
-####AFNetWorking3.0导入####
+####AFNetWorking3.0导入【使用CocoaPods】####
 ```C
     source 'https://github.com/CocoaPods/Specs.git'
     platform :ios, '8.0'
