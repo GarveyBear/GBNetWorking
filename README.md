@@ -41,7 +41,8 @@ errorBlock:(GB_ErrorBlock)errorBlock
 
 ###Post请求 区分接口类型
 ```ObjectiveC 
-+ (id)PostRequestType:(NSString *)type Url:(NSString *)requestUrl dicData:(NSDictionary *)paramDic successPBlock:(GB_Param_SucceedBlock)successPBlock errorBlock:(GB_ErrorBlock)errorBlock
++ (id)PostRequestType:(NSString *)type Url:(NSString *)requestUrl dicData:(NSDictionary *)
+paramDic successPBlock:(GB_Param_SucceedBlock)successPBlock errorBlock:(GB_ErrorBlock)errorBlock
 {
     return [[self alloc] initWithPostTypeRequest:type Url:requestUrl dicData:paramDic 
     successPBlock:successPBlock errorBlock:errorBlock];
