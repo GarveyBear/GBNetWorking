@@ -1,11 +1,20 @@
 # GBNetWorking
 基于AFNetworking3.0，将调取网络封装在block中，便于用户回调查看。基本的功能支持GET、POST、Download。
 
+[我的博客](http://blog.csdn.net/normanv "Garvey Blog")
+
 * 不区分接口 Get请求
 * 区分接口   Get请求
 * 不区分接口 Post请求
 * 区分接口   Post请求
 * Download请求
+
+####AFNetWorking3.0导入####
+```C
+    source 'https://github.com/CocoaPods/Specs.git'
+    platform :ios, '8.0'
+    pod 'AFNetworking', '~> 3.0'
+```
 
 ###Get请求 不区分接口类型
 ```ObjectiveC 
@@ -103,6 +112,4 @@ downLoadSuccess:(GB_DownLoadSuccess)downLoadSuccess errorBlock:(GB_ErrorBlock)er
 }
 ```
 ###
-
-[我的博客](http://blog.csdn.net/normanv "CSDN博客")
 [回到顶部](#readme)
