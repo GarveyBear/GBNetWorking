@@ -1,7 +1,7 @@
 # GBNetWorking
 基于AFNetworking3.0，将调取网络封装在block中，便于用户回调查看。基本的功能支持GET、POST、Download。
 
-* 不区分接口 Get请求()
+* 不区分接口 Get请求
 * 区分接口   Get请求
 * 不区分接口 Post请求
 * 区分接口   Post请求
@@ -24,6 +24,26 @@ errorBlock:(GB_ErrorBlock)errorBlock
 {
     return [[self alloc] initWithGetTypeRequest:type Url:requestUrl successBlock:successPBlock 
     errorBlock:errorBlock];
+}
+```
+###
+
+###Post请求 不区分接口
+```ObjectiveC 
++ (id)PostRequest:(NSString *)requestUrl dicData:(NSDictionary *)paramDic successBlock:(GB_SucceedBlock )
+ successBlock   errorBlock:(GB_ErrorBlock)errorBlock
+{
+    return [[self alloc] initWithPostRequest:requestUrl dicData:paramDic 
+    successBlock:successBlock errorBlock:errorBlock];
+}
+```
+###
+
+###Post请求 区分接口类型
+```ObjectiveC 
++ (id)PostRequestType:(NSString *)type Url:(NSString *)requestUrl dicData:(NSDictionary *)paramDic successPBlock:(GB_Param_SucceedBlock)successPBlock errorBlock:(GB_ErrorBlock)errorBlock
+{
+    return [[self alloc] initWithPostTypeRequest:type Url:requestUrl dicData:paramDic successPBlock:successPBlock errorBlock:errorBlock];
 }
 ```
 ###
