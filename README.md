@@ -5,7 +5,7 @@
 * 编程语言
 * 编程语言
 
-###
+###Get请求 不区分接口类型
 ```Java
       + (id)GetRequest:(NSString *)requestUrl successBlock:(GB_SucceedBlock)successBlock errorBlock:(GB_ErrorBlock)errorBlock
       {
