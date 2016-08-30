@@ -9,19 +9,21 @@
 
 ###Get请求 不区分接口类型
 ```ObjectiveC 
-       + (id)GetRequest:(NSString *)requestUrl successBlock:(GB_SucceedBlock)successBlock 
-       errorBlock:(GB_ErrorBlock)errorBlock
-       {
-       return [[self alloc] initWithGetRequest:requestUrl successBlock:successBlock errorBlock:errorBlock];
-       }
++ (id)GetRequest:(NSString *)requestUrl successBlock:(GB_SucceedBlock)successBlock 
+errorBlock:(GB_ErrorBlock)errorBlock
+{
+    return [[self alloc] initWithGetRequest:requestUrl successBlock:successBlock errorBlock:errorBlock];
+}
 ```
 ###
 
 ###Get请求 区分接口类型
 ```ObjectiveC 
- + (id)GetRequestType:(NSString *)type Url:(NSString *)requestUrl successBlock:(GB_Param_SucceedBlock)successPBlock errorBlock:(GB_ErrorBlock)errorBlock
+ + (id)GetRequestType:(NSString *)type Url:(NSString *)requestUrl successBlock:(GB_Param_SucceedBlock)
+ successPBlock errorBlock:(GB_ErrorBlock)errorBlock
 {
-return [[self alloc] initWithGetTypeRequest:type Url:requestUrl successBlock:successPBlock errorBlock:errorBlock];
+    return [[self alloc] initWithGetTypeRequest:type Url:requestUrl successBlock:successPBlock 
+    errorBlock:errorBlock];
 }
 ```
 ###
